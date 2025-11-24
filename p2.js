@@ -55,22 +55,29 @@
 //         let s = mat[2];  //second score
 //         if (f > s) tot += 3;
 //         else if (f === s) tot += 1;
-//     }
-    
+//     }   
 //     return tot;
 // }
 
 
 // problem 6
-// function sumOfDifferences(arr) {
-//     return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0;
-// }
 
+// function sumOfDifferences(arr) {
+//     if (arr.length <= 1) 
+//      return 0;
+//         let sort = arr.sort((a, b) => b - a);
+
+//     let sum = 0;
+//     for (let i = 0; i < sort.length - 1; i++) {
+//         sum += sort[i] - sort[i + 1];
+//     }
+//     return sum;
+// }   
 
 //problem 7
 
-function fGrade(exam, project) {
-return exam > 90 || project > 10 ? 100 :
-  exam > 75 && project >= 5 ? 90 :
-  exam > 50  && project >= 2 ?  75 : 0 
-}
+// function fGrade(exam, project) {
+// return exam > 90 || project > 10 ? 100 :
+//   exam > 75 && project >= 5 ? 90 :
+//   exam > 50  && project >= 2 ?  75 : 0 
+// }
